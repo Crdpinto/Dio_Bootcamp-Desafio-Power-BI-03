@@ -1,18 +1,18 @@
 # Descrição do desafio módulo 3 – Processamento de Dados Simplificado com Power BI
 
 1. Criação de uma instância na Azure para MySQL
-   - Isntância criada na Azure.
+   * Isntância criada na Azure.
       ![image](https://github.com/user-attachments/assets/d708586f-9d25-40d8-8c27-6b3f111c07cc)
 2. Criar o Banco de dados com base disponível no github
-   - Banco de dados e suas respectivas tabelas.
+   * Banco de dados e suas respectivas tabelas.
       ![image](https://github.com/user-attachments/assets/865684da-242c-4acb-b28d-5b69c016d357)
 
 3. Integração do Power BI com MySQL no Azure
-   - Integração com Azure.
+   * Integração com Azure.
      ![image](https://github.com/user-attachments/assets/653cbe6e-cd6b-4555-937f-2b756fc800cf)
 
 4. Verificar problemas na base a fim de realizar a transformação dos dados
-   - Etapas de transformação dos dados da tabela.
+   * Etapas de transformação dos dados da tabela.
      
     ![image](https://github.com/user-attachments/assets/2763b743-21a1-43fd-b429-b70ba870420a)
 
@@ -20,7 +20,7 @@
 ## Diretrizes para transformação dos dados
 
 1. Verifique os cabeçalhos e tipos de dados
-   - As tabelas foram verificadas e as alterações necessárias foram efetuadas.
+   * As tabelas foram verificadas e as alterações necessárias foram efetuadas.
    
     ![image](https://github.com/user-attachments/assets/99d4f8f8-b90a-4dad-ab2c-b630b92b59fb)
      ![image](https://github.com/user-attachments/assets/2d8a2bf7-7439-40cc-89b5-026e77075c5d)
@@ -30,17 +30,21 @@
      ![image](https://github.com/user-attachments/assets/7979a5cf-75b5-4ae9-af43-54f38e9b1650)
 
 2. Modifique os valores monetários para o tipo double preciso
-   - Na tabela employee a coluna Salary foi alterada para refletir o valor monetário corretamente.
+   * Na tabela employee a coluna Salary foi alterada para refletir o valor monetário corretamente.
      ![image](https://github.com/user-attachments/assets/e3acfa08-9a7c-464c-b66f-a783a209ae97)
 
 3. Verifique a existência dos nulos e analise a remoção
-   - Nas tabelas criadas, só houve uma incidencia de nulo, porém não houve a necessecidade de remoição do mesmo da base de dados.
+   * Nas tabelas criadas, só teve uma incidencia de nulo, porém não houve a necessidade de remoção do mesmo da base de dados.
 
 4. Os employees com nulos em Super_ssn podem ser os gerentes. Verifique se há algum colaborador sem gerente
-   
-6. Verifique se há algum departamento sem gerente
+   * Na tabela employee só consta um registro com nulo, porém o mesmo se trata de um Gerente.
+   ![image](https://github.com/user-attachments/assets/b8012361-3023-4a26-8fdd-a2f90d98f247)
 
-7. Se houver departamento sem gerente, suponha que você possui os dados e preencha as lacunas
+5. Verifique se há algum departamento sem gerente
+   * Na tabela departament, não consta departamento sem gerente.
+
+6. Se houver departamento sem gerente, suponha que você possui os dados e preencha as lacunas
+   * Não foi necessário efetuar essa alteração.
 
 8. Verifique o número de horas dos projetos
 
