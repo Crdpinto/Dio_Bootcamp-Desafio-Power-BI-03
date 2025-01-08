@@ -63,23 +63,25 @@
       ![image](https://github.com/user-attachments/assets/c4bf8721-a0b9-46c7-9cc0-83c95087f526)
 
 11. Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
-    *
-      ![image](https://github.com/user-attachments/assets/85c8492e-2d5a-45f4-a6a6-8f77999c8257)
+    * A mesclagem das tabelas resultou na consulta abaixo.
+      ![image](https://github.com/user-attachments/assets/9a557244-9a0e-4b07-9e4e-1e5c769de84e)
 
-      ![image](https://github.com/user-attachments/assets/b3434605-efa9-4f4a-b305-a11eb5706a84)
-
+      ![image](https://github.com/user-attachments/assets/5183cc53-a1b3-4b72-8a78-cfb6df38444c)
 
 13. Neste processo elimine as colunas desnecessárias.
+    * As colunas desnecessárias, foram excluídas da consulta.
+      ![image](https://github.com/user-attachments/assets/dc7185b0-9324-4e74-bd7f-0327f71abd4c)
+
 
 14. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
 
-15. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
+16. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
 
-16. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
+17. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
       
-17. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
+18. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
 
 
-18. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
+19. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
 
-19. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
+20. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
