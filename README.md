@@ -92,10 +92,11 @@
       ![image](https://github.com/user-attachments/assets/e87a932a-239f-46a8-a2b9-3fbc3d22199d)
 
 19. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
-    *
+    * A opção de mesclar as tabelas permite que essas sejam unidas corretamente, garantindo que cada departamento seja associado à sua localização correspondente
+    * A opção atribuir não é o mais adequado, pois somente adicionaria as linhas de uma tabela à outra, sem criar o relacionamento entre os departamentos e as localizações.
 
 20. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
-
+    * 
 
 21. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
     * Essa ação foi efetuada no momento extração das informações.
