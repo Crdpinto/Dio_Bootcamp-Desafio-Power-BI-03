@@ -89,12 +89,13 @@
 
 17. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
 
+      ![image](https://github.com/user-attachments/assets/e87a932a-239f-46a8-a2b9-3fbc3d22199d)
 
-18. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
+19. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
+    *
+
+20. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
 
 
-19. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
-
-
-20. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
+21. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
     * Essa ação foi efetuada no momento extração das informações.
