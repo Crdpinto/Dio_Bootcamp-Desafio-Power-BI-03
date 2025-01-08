@@ -49,7 +49,11 @@
    * Não foi necessário efetuar essa alteração.
 
 8. Verifique o número de horas dos projetos
-   * A contagem de horas utilizada por cada projeto.
+   * A contagem de horas utilizada por cada projeto foi realizada através de consulta SQL diretamente no banco de dados.
+   * SELECT p.pname AS Nome_Projeto, SUM(w.hours) AS Total_Horas
+    FROM works_on AS w
+    JOIN project AS p ON w.pno = p.pnumber
+    GROUP BY p.pname;
    
       ![image](https://github.com/user-attachments/assets/dfcf06e3-07f9-4af3-8d80-d17c009b9382)
 
@@ -59,6 +63,11 @@
       ![image](https://github.com/user-attachments/assets/c4bf8721-a0b9-46c7-9cc0-83c95087f526)
 
 11. Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
+    *
+      ![image](https://github.com/user-attachments/assets/85c8492e-2d5a-45f4-a6a6-8f77999c8257)
+
+      ![image](https://github.com/user-attachments/assets/b3434605-efa9-4f4a-b305-a11eb5706a84)
+
 
 13. Neste processo elimine as colunas desnecessárias.
 
