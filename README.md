@@ -79,12 +79,22 @@
       ![image](https://github.com/user-attachments/assets/1a9e24d5-71c1-40a8-b6f8-449c80444d88)
 
 16. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
+    * Antes
+    
+      ![image](https://github.com/user-attachments/assets/f76f59ab-a460-458b-bbca-d969ed0f3ee7)
+
+    * Depois
+    
+      ![image](https://github.com/user-attachments/assets/75cc8e35-635b-4923-829a-62086495ab13)
 
 17. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
-      
+
+
 18. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
 
 
 19. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
 
+
 20. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
+    * Essa ação foi efetuada no momento extração das informações.
