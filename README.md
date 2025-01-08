@@ -43,29 +43,34 @@
 5. Verifique se há algum departamento sem gerente
    * Na tabela departament, não consta departamento sem gerente.
      
-     ![image](https://github.com/user-attachments/assets/ac69ed36-7bf8-4e1b-9afa-5592e55d8ff8)
+      ![image](https://github.com/user-attachments/assets/ac69ed36-7bf8-4e1b-9afa-5592e55d8ff8)
 
 6. Se houver departamento sem gerente, suponha que você possui os dados e preencha as lacunas
    * Não foi necessário efetuar essa alteração.
 
 8. Verifique o número de horas dos projetos
-   * 
+   * A contagem de horas utilizada por cada projeto.
+   
+      ![image](https://github.com/user-attachments/assets/dfcf06e3-07f9-4af3-8d80-d17c009b9382)
 
 10. Separar colunas complexas
+    * Na tabela employee, as colunas Bdate e Address foram separadas em outras colunas.
+      ![image](https://github.com/user-attachments/assets/e29215c8-24b0-425d-b9b9-6c4f01af08e5)
+      ![image](https://github.com/user-attachments/assets/c4bf8721-a0b9-46c7-9cc0-83c95087f526)
 
 11. Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
 
-12. Neste processo elimine as colunas desnecessárias.
+13. Neste processo elimine as colunas desnecessárias.
 
-13. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
+14. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
 
-14. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
+15. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
 
-15. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
+16. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
       
-16. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
+17. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
 
 
-17. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
+18. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
 
-18. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
+19. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
