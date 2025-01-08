@@ -22,7 +22,7 @@
 1. Verifique os cabeçalhos e tipos de dados
    * As tabelas foram verificadas e as alterações necessárias foram efetuadas.
    
-    ![image](https://github.com/user-attachments/assets/99d4f8f8-b90a-4dad-ab2c-b630b92b59fb)
+     ![image](https://github.com/user-attachments/assets/99d4f8f8-b90a-4dad-ab2c-b630b92b59fb)
      ![image](https://github.com/user-attachments/assets/2d8a2bf7-7439-40cc-89b5-026e77075c5d)
      ![image](https://github.com/user-attachments/assets/11662e3f-fc10-4ee1-a5c2-36f7a0094bb0)
      ![image](https://github.com/user-attachments/assets/64a1c97a-30f1-45eb-b79e-51ac79d62ef1)
@@ -48,7 +48,7 @@
 6. Se houver departamento sem gerente, suponha que você possui os dados e preencha as lacunas
    * Não foi necessário efetuar essa alteração.
 
-8. Verifique o número de horas dos projetos
+7. Verifique o número de horas dos projetos
    * A contagem de horas utilizada por cada projeto foi realizada através de consulta SQL diretamente no banco de dados.
    * SELECT p.pname AS Nome_Projeto, SUM(w.hours) AS Total_Horas
     FROM works_on AS w
@@ -57,28 +57,28 @@
    
       ![image](https://github.com/user-attachments/assets/dfcf06e3-07f9-4af3-8d80-d17c009b9382)
 
-10. Separar colunas complexas
+8. Separar colunas complexas
     * Na tabela employee, as colunas Bdate e Address foram separadas em outras colunas.
       ![image](https://github.com/user-attachments/assets/e29215c8-24b0-425d-b9b9-6c4f01af08e5)
       ![image](https://github.com/user-attachments/assets/c4bf8721-a0b9-46c7-9cc0-83c95087f526)
 
-11. Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
+9. Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
     * A mesclagem das tabelas resultou na consulta abaixo.
       ![image](https://github.com/user-attachments/assets/9a557244-9a0e-4b07-9e4e-1e5c769de84e)
 
       ![image](https://github.com/user-attachments/assets/5183cc53-a1b3-4b72-8a78-cfb6df38444c)
 
-13. Neste processo elimine as colunas desnecessárias.
+10. Neste processo elimine as colunas desnecessárias.
     * As colunas desnecessárias, foram excluídas da consulta.
       ![image](https://github.com/user-attachments/assets/dc7185b0-9324-4e74-bd7f-0327f71abd4c)
 
-14. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
+11. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
     * SELECT concat(e.Fname, ' ', e.Minit, ' ', e.Lname) as Nome_Funcionario, concat(g.Fname, ' ', g.Minit, ' ', g.Lname) as Nome_Gerente FROM employee as e LEFT JOIN employee as g           ON e.Super_ssn = g.Ssn;
 
       ![image](https://github.com/user-attachments/assets/f0054b14-a915-4180-82f9-154559dd3ef6)
       ![image](https://github.com/user-attachments/assets/1a9e24d5-71c1-40a8-b6f8-449c80444d88)
 
-16. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
+12. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
     * Antes
     
       ![image](https://github.com/user-attachments/assets/f76f59ab-a460-458b-bbca-d969ed0f3ee7)
@@ -87,16 +87,18 @@
     
       ![image](https://github.com/user-attachments/assets/75cc8e35-635b-4923-829a-62086495ab13)
 
-17. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
+13. Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
 
       ![image](https://github.com/user-attachments/assets/e87a932a-239f-46a8-a2b9-3fbc3d22199d)
 
-19. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
+14. Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.
     * A opção de mesclar as tabelas permite que essas sejam unidas corretamente, garantindo que cada departamento seja associado à sua localização correspondente
     * A opção atribuir não é o mais adequado, pois somente adicionaria as linhas de uma tabela à outra, sem criar o relacionamento entre os departamentos e as localizações.
 
-20. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
-    * 
+15. Agrupe os dados a fim de saber quantos colaboradores existem por gerente
+    * Agrupamento para contagem de colaboradores por gerente.
+    
+      ![image](https://github.com/user-attachments/assets/0c4dee5e-8917-4f83-ad02-d374154fb0c1)
 
-21. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
+16. Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
     * Essa ação foi efetuada no momento extração das informações.
