@@ -72,8 +72,11 @@
     * As colunas desnecessárias, foram excluídas da consulta.
       ![image](https://github.com/user-attachments/assets/dc7185b0-9324-4e74-bd7f-0327f71abd4c)
 
-
 14. Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
+    * SELECT concat(e.Fname, ' ', e.Minit, ' ', e.Lname) as Nome_Funcionario, concat(g.Fname, ' ', g.Minit, ' ', g.Lname) as Nome_Gerente FROM employee as e LEFT JOIN employee as g           ON e.Super_ssn = g.Ssn;
+
+      ![image](https://github.com/user-attachments/assets/f0054b14-a915-4180-82f9-154559dd3ef6)
+      ![image](https://github.com/user-attachments/assets/1a9e24d5-71c1-40a8-b6f8-449c80444d88)
 
 16. Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
 
